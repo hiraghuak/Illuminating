@@ -29,7 +29,7 @@
             <div class="logo text-right">
                 <img src="img/logo.png" class="img-responsive" alt="The Illuminating India logo" />
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="theIlluminatingImg">
                     <img src="img/india-logo.png" class="img-responsive" alt="The Illuminating India logo" />
                     <div class="theIlluminatingText">
@@ -50,7 +50,7 @@
     <!-- LIGHTING RAJAGOPALAPURAM SECTION START -->
     <section id="lighting">
         <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
                 <div class="leftBar">
                     <div class="ledReq">
                         <p>LED’s</p>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                 <div class="CenterBodYAgend">
                     <div class="LightImg">
                         <img src="img/light.png" class="img-responsive" alt="Light is the basis for life." />
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
                 <div class="RightBar">
                     <div class="ledReq">
                         <p>LED’s</p>
@@ -184,13 +184,12 @@
                     <h3>GALLERY</h3>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="videoImgSection" data-toggle="modal" data-target="#exampleModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s">
                             <img src="img/videoImg.png" class="img-reponsive" alt="video img" />
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                         <div class="photoGallery ">
                             <div id="lightgallery">
                                 <a href="img/gallery/1.jpg">
@@ -245,7 +244,7 @@
     <section id="blog">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="blogTile">
                         <h3>BLOG & NEWS</h3>
                     </div>
@@ -269,12 +268,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="contactusform">
-                        <div class="Alltitle">
+                        <div class="AlltitleForm">
                             <h3>ILLUMINATE A SMILE</h3>
                         </div>
-                        <form>
+                        <form method="post">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
                             </div>
@@ -284,16 +283,69 @@
                             <div class="form-group">
                                 <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email">
                             </div>
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>No. of LED’s</option>
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                    </select>
+
+
+                            <!-- number increase  section start -->
+                            <div class="formIcons">
+                                <div class="IconsBody">
+                                    <div class="ledType">
+                                        <img src="img/formImg/1.png" class="img-responsive" alt="LED 1" />
+                                    </div>
+                                    <div class="ledName">
+                                        <p>Smart LED</p>
+                                    </div>
+                                    <div class="NumberCount">
+                                        <div class="value-button value1" id="decrease" onclick="decreaseValue()" value="Decrease Value"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                                        <input id="number" value="0" class="form-control" />
+                                        <div class="value-button value2" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                                <div class="IconsBody">
+                                    <div class="ledType">
+                                        <img src="img/formImg/2.png" class="img-responsive" alt="LED 1" />
+                                    </div>
+                                    <div class="ledName">
+                                        <p>Illumilight</p>
+                                    </div>
+                                    <div class="NumberCount">
+                                        <div class="value-button value1" id="decrease" onclick="decreaseValue1()" value="Decrease Value"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                                        <input id="number1" value="0" class="form-control" />
+                                        <div class="value-button value2" id="increase" onclick="increaseValue1()" value="Increase Value"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                                <div class="IconsBody">
+                                    <div class="ledType">
+                                        <img src="img/formImg/3.png" class="img-responsive" alt="LED 1" />
+                                    </div>
+                                    <div class="ledName">
+                                        <p>Solar task light</p>
+                                    </div>
+                                    <div class="NumberCount">
+                                        <div class="value-button value1" id="decrease" onclick="decreaseValue2()" value="Decrease Value"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                                        <input id="number2" value="0" class="form-control" />
+                                        <div class="value-button value2" id="increase" onclick="increaseValue2()" value="Increase Value"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                                <div class="IconsBody">
+                                    <div class="ledType">
+                                        <img src="img/formImg/4.png" class="img-responsive" alt="LED 1" />
+                                    </div>
+                                    <div class="ledName">
+                                        <p>Outdoor</p>
+                                    </div>
+                                    <div class="NumberCount">
+                                        <div class="value-button value1" id="decrease" onclick="decreaseValue3()" value="Decrease Value"><i class="fa fa-minus" aria-hidden="true"></i></div>
+                                        <input id="number3" value="0" class="form-control" />
+                                        <div class="value-button value2" id="increase" onclick="increaseValue3()" value="Increase Value"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- number increase  section start -->
+
+                            <div class="TotalNumberCount">
+                                <p><i class="fa fa-inr" aria-hidden="true"></i> 400 </p>
+                            </div>
+
                             <div class="text-center">
                                 <button type="submit" class="btn btn-info ">ILLUMINATE</button>
                             </div>
@@ -311,12 +363,12 @@
     <section id="anInitiative">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="anInitiText">
                         <h3>An Initiative by Indiya LED </h3>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="socialIcons text-right">
                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -333,9 +385,6 @@
     <footer>
         <p>© 2017 All Rights Reserved</p>
     </footer>
-
-
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -382,6 +431,72 @@
         });
     </script>
 
+    <!-- form number increase & decreasescript -->
+    <script>
+        // 1st section 
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+        }
+
+        // 2nd section 
+        function increaseValue1() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number1').value = value;
+        }
+
+        function decreaseValue1() {
+            var value = parseInt(document.getElementById('number1').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number1').value = value;
+        }
+
+        // 3rd section 
+        function increaseValue2() {
+            var value = parseInt(document.getElementById('number2').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number2').value = value;
+        }
+
+        function decreaseValue2() {
+            var value = parseInt(document.getElementById('number2').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number2').value = value;
+        }
+
+        // 4th section 
+        function increaseValue3() {
+            var value = parseInt(document.getElementById('number3').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number3').value = value;
+        }
+
+        function decreaseValue3() {
+            var value = parseInt(document.getElementById('number3').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number3').value = value;
+        }
+    </script>
 </body>
 
 </html>

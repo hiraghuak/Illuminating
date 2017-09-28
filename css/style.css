@@ -115,6 +115,7 @@
         border-radius: 17px;
         margin-left: 10px;
         font-family: 'montserratbold';
+        cursor: pointer;
     }
     
     .btn-info:hover {
@@ -139,7 +140,9 @@
     /*clear float */
     
     .CenterBodYAgend::after,
-    .blogBody::after {
+    .blogBody::after,
+    .formIcons::after,
+    .NumberCount::after {
         content: "";
         clear: both;
         display: table;
@@ -175,6 +178,24 @@
         position: relative;
         font-family: 'montserratbold';
         margin-bottom: 30px;
+    }
+    
+    .AlltitleForm {
+        text-align: right;
+        color: #fff;
+        position: relative;
+        font-family: 'montserratbold';
+        margin-bottom: 30px;
+    }
+    
+    .AlltitleForm::before {
+        content: "";
+        background-color: #fff;
+        height: 5px;
+        width: 40px;
+        position: absolute;
+        top: -7px;
+        right: 0;
     }
     
     .Alltitle h3:before {
@@ -413,7 +434,7 @@
     }
     
     .contactusform {
-        background-color: #673f1f;
+        background-color: #ed5f2f;
         padding: 30px;
         margin: 0px 30px;
     }
@@ -426,14 +447,14 @@
         display: block;
         width: 100%;
         padding: 1rem .75rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         line-height: 1.25;
-        color: #673f1f;
-        background-color: #c6b199;
+        color: #737373;
+        background-color: #ffffff;
         background-image: none;
         background-clip: padding-box;
         border: 1px solid rgba(0, 0, 0, .15);
-        border-radius: 0px;
+        border-radius: 6px;
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     }
     
@@ -532,6 +553,162 @@
             transition: all .5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
         }
     }
+    /* Medium devices (tablets, 768px and up) */
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        #banner {
+            background-size: 100% 100%;
+            height: auto;
+        }
+        .leftBar {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-right: 0;
+        }
+        .RightBar {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-left: 0;
+        }
+        .leftBar,
+        .RightBar {
+            background-color: #f7921e;
+            padding: 20px 0px 20px 0px;
+        }
+        #lighting {
+            padding: 0px 0 10px 0;
+        }
+        .LightImg img {
+            width: 110px;
+        }
+        .LightImg {
+            width: 100%;
+            margin-top: 25px;
+        }
+        .AgendCenter {
+            width: 100%;
+            padding: 25px 30px;
+        }
+        .lightingVilege {
+            margin-top: 50px;
+        }
+        .homes img {
+            width: 220px;
+            margin-top: 50%;
+        }
+        #aSmile {
+            padding: 30px 0px;
+        }
+        .gallery {
+            margin-top: 40px;
+        }
+        .videoImgSection {
+            margin-bottom: 25px;
+        }
+        .blogBody {
+            margin-bottom: 20px;
+        }
+        .blgo1 img {
+            width: 100%;
+        }
+        footer {
+            text-align: center;
+        }
+    }
+    /* Small devices (landscape phones, 576px and up) */
+    
+    @media (min-width: 576px) and (max-width: 767px) {
+        .logo img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+        }
+        #banner {
+            background-size: 100% 100%;
+            height: auto;
+        }
+        .leftBar {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-right: 0;
+        }
+        .RightBar {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-left: 0;
+        }
+        .leftBar,
+        .RightBar {
+            padding: 20px 0px 20px 0px;
+        }
+        .AgendCenter {
+            padding: 50px;
+            width: 70%;
+        }
+        #lighting {
+            padding: 0px 0 10px 0;
+        }
+        .LightImg {
+            width: 20%;
+            margin-top: 70px;
+            margin-left: 25px;
+        }
+        .LightImg img {
+            width: 160px;
+        }
+        .lightingVilege .container {
+            max-width: 90%;
+        }
+        .lightingVilege {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .homes img {
+            width: 230px;
+            margin-top: 100px;
+        }
+        .Alltitle1 h3 {
+            margin-bottom: 10px;
+        }
+        .theStartBody h3 {
+            font-size: 20px;
+        }
+        #aSmile {
+            padding: 20px 0px;
+        }
+        .videoImgSection {
+            margin-bottom: 30px;
+        }
+        .blogBody {
+            margin-bottom: 20px;
+        }
+        #anInitiative .anInitiText h3 {
+            text-align: center;
+        }
+        .gallery {
+            margin-top: 50px;
+        }
+        .socialIcons {
+            text-align: center !important;
+        }
+        #anInitiative {
+            padding: 30px 0px;
+        }
+        #anInitiative .socialIcons a .fa {
+            font-size: 30px;
+        }
+        footer {
+            text-align: center;
+        }
+        #banner .theIlluminatingImg {
+            margin-top: 50px;
+        }
+        #banner .theIlluminatingText p {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.49);
+            padding: 10px 0px;
+        }
+    }
     /* Extra small devices (portrait phones, less than 576px) */
     
     @media (max-width: 575px) {
@@ -616,7 +793,7 @@
             margin: 0 auto;
         }
         #lighting {
-            padding: 30px 0 30px 0;
+            padding: 0 0 20px 0;
         }
         .gallery {
             margin-top: 35px;
@@ -625,7 +802,7 @@
             padding: 30px 0px;
         }
         .illminatingBody .media h3 {
-            font-size: 16px;
+            font-size: 14px;
         }
         #howYoucan {
             padding: 30px 10px;
@@ -691,4 +868,111 @@
             text-align: center;
             font-size: 9px;
         }
+        .media-right img,
+        .media-left img {
+            width: 40px !important;
+        }
+    }
+    
+    .value-button {
+        display: inline-block;
+        margin: 0px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+        background: #d44e15;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        top: 24%;
+        cursor: pointer;
+    }
+    
+    .value1 {
+        position: absolute;
+        left: 5px;
+    }
+    
+    .value2 {
+        position: absolute;
+        right: 5px;
+    }
+    
+    input#number,
+    input#number1,
+    input#number2,
+    input#number3 {
+        text-align: center;
+        border: none;
+        margin: 0px;
+        width: 41px;
+        height: 5px;
+        display: inline-block;
+        padding: 16px 0px;
+        background-color: #d44e15;
+        color: #fff;
+        font-size: 18px;
+        overflow: overlay !important;
+        margin-left: 18px;
+        border-radius: 0px;
+    }
+    
+    .IconsBody {
+        float: left;
+        width: 21%;
+        margin-right: 15px;
+    }
+    
+    .IconsBody .ledType {
+        background-color: #d44e15;
+        border: 1px solid #c3450f;
+        border-radius: 49px;
+        display: inline-block;
+        padding: 5px 12px;
+        margin-left: 11px;
+    }
+    
+    .IconsBody .ledType img {
+        display: block;
+        margin: 0 auto;
+        width: 30px;
+        height: 43px;
+    }
+    
+    .IconsBody .ledName p {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        line-height: 14px;
+    }
+    
+    .NumberCount {
+        background-color: #d44e15;
+        padding: 1px 0px;
+        border: 1px solid #c14815;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+    }
+    
+    .formIcons {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .ledName {
+        height: 45px;
+    }
+    
+    .TotalNumberCount p {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 26px;
+        font-weight: bold;
     }
